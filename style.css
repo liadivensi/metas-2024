@@ -1,48 +1,66 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Cor de fundo */
-    color: #333; /* Cor do texto */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site de Metas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Cor de fundo */
+            color: #333; /* Cor do texto */
+        }
 
-header {
-    background-color: #ffc0cb; /* Rosa claro */
-    padding: 20px;
-}
+        header {
+            background-color: #ffc0cb; /* Rosa claro */
+            padding: 20px;
+        }
 
-header h1 {
-    color: #333; /* Cor do título */
-}
+        header h1 {
+            color: #333; /* Cor do título */
+        }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
 
-nav ul li a {
-    color: #333; /* Cor dos links */
-    text-decoration: none;
-}
+        nav ul li a {
+            color: #333; /* Cor dos links */
+            text-decoration: none;
+        }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
 
-main {
-    padding: 20px;
-}
+        main {
+            padding: 20px;
+        }
 
-section {
-    background-color: #add8e6; /* Azul claro */
-    padding: 20px;
-    margin-bottom: 20px;
-}
+        section {
+            background-color: #add8e6; /* Azul claro */
+            padding: 20px;
+            margin-bottom: 20px;
+        }
 
-section h2 {
-    margin-top: 0;
-    color: #ffc0cb
+        section h2 {
+            margin-top: 0;
+            color: #ffc0cb; /* Rosa claro */
+        }
+
+        footer {
+            background-color: #ffc0cb; /* Rosa claro */
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cont
