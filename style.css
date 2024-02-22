@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #ffb6c1; /* Rosa claro */
+    background-color: #ffc0cb; /* Rosa claro */
     padding: 20px;
 }
 
@@ -45,11 +45,4 @@ section {
 
 section h2 {
     margin-top: 0;
-}
-
-footer {
-    background-color: #ffb6c1; /* Rosa claro */
-    padding: 20px;
-    text-align: center;
-}
-
+    color: #ffc0cb
