@@ -1,14 +1,13 @@
 const botoes = document.querySelectorAll(".botao");
 const textos = document.querySelectorAll(".aba-conteudo");
 
-for (let i = 0; i < botoes.length; i++) {
-    botoes[i].onclick = function () {
-
-        for (let j = 0; j < botoes.length; j++) {
+//laco de repeticao
+for(let i=0; i <botoes.length; i++){
+    botoes[i].onclick = function(){
+        for(let j=0;j<botoes.length;j++){
             botoes[j].classList.remove("ativo");
             textos[j].classList.remove("ativo");
         }
-
         botoes[i].classList.add("ativo");
         textos[i].classList.add("ativo");
     }
@@ -33,19 +32,22 @@ function calculaTempo(tempoObjetivo) {
     segundos %= 60;  //obtem o resto da divisão dos segundos
     minutos %= 60;   //obtem o resto da divisão dos minutos
     horas %= 24;    //obtem o resto da divisão das horas
-}
 
-    const botoes = document.querySelectorAll(".botao");
-const textos = document.querySelectorAll(".aba-conteudo");
 
-//laco de repeticao
-for(let i=0; i <botoes.length; i++){
-    botoes[i].onclick = function(){
-        for(let j=0;j<botoes.length;j++){
-            botoes[j].classList.remove("ativo");
-            textos[j].classList.remove("ativo");
-        }
-        botoes[i].classList.add("ativo");
-        textos[i].classList.add("ativo");
+if (tempoFinal > 0){
+    return dias +"dias" + horas +"horas"+minutos +"minutos"+ segundos+"segundos";
+    }else{
+        return "PRAZO ENCERRRADO!!!"
     }
-}   
+}
+function atualizadocronometro(){
+    //laço de repetição para interagir com todos os objtivos
+    for (let i= 0;i< contadores.length; i++){
+        contadores[i].textContent=calculaTempo(tempos[i]); //textcontent mostra na tela a meta
+    }
+}
+function comecaCronometro(){
+    atualizadocronometro();//chamando da função criada anteriormente dentro desta função
+    setInterval(atualizadocronometro,1000);//função que fez a contagem do tempoa cada seg.
+}
+comecaCronometro(); //chamada da função que inicia o cronometro
