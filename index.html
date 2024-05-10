@@ -1,50 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site de Metas</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Meus objetivos do ano</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <h1>Meu Site de Metas</h1>
-        <h1> 
-            <a href="metas.html">cronometro das metas</a>
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="#meta1">Meta 1</a></li>
-                <li><a href="#meta2">Meta 2</a></li>
-                <li><a href="#meta3">Meta 3</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="meta1">
-            <h2>Meta 1: Passar em uma faculdade</h2>
-            <p><strong>Importância:</strong> Meu futuro depende disso.</p>
-            <p><strong>Desenvolvimento:</strong> Estudar muito.</p>
-            <p><strong>Prazo:</strong> 9 meses.</p>
-        </section>
-
-        <section id="meta2">
-            <h2>Meta 2: Ganhar o campeonato de vôlei na minha cidade</h2>
-            <p><strong>Importância:</strong> Trazer orgulho para a família e escola.</p>
-            <p><strong>Desenvolvimento:</strong> Treinar muito.</p>
-            <p><strong>Prazo:</strong> 3 a 5 meses.</p>
-        </section>
-
-        <section id="meta3">
-            <h2>Meta 3: Viajar para Balneário Camboriú com minha mãe</h2>
-            <p><strong>Importância:</strong> Passar um tempo com ela e ver os carros esportivos.</p>
-            <p><strong>Desenvolvimento:</strong> Guardar dinheiro.</p>
-            <p><strong>Prazo:</strong> 6 meses.</p>
-        </section>
-    </main>
-
-    </footer>
+    <section class="conteudo-principal">
+        <h2 class="titulo-principal">Meus Objetivos do ano<span>_</span></h2>
+        <div class="conteudo">
+        <div class="botoes">
+            <button class="botao ativo">Cursos na Alura</button>
+            <button class="botao">Criar projetos em Javascript</button>
+            <button class="botao">Criar um portfolio</button>
+            <button class="botao">Atualizar meu currículo</button>
+        </div>
+        <div class="abas-textos">
+            <div class="aba-conteudo ativo">
+                <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na Alura</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                <div class="contador"></div>
+            </div>
+            <div class="aba-conteudo">
+                <h3 class="aba-conteudo-titulo-principal">Criar 5 projetos em Javascript</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                <div class="contador"></div>
+            </div>
+            <div class="aba-conteudo">
+                <h3 class="aba-conteudo-titulo-principal">Criar um portfolio com os meus 3 melhores projetos</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                <div class="contador"></div>
+            </div>
+            <div class="aba-conteudo">
+                <h3 class="aba-conteudo-titulo-principal">Atualizar meu curriculo com os certificados da Alura</h3>
+                <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
+                <div class="contador"></div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <script src="main.js"></script>
 </body>
+</html>
